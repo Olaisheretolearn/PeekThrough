@@ -18,7 +18,7 @@ app.use('/proxy', (req, res) => {
         }
         const $ = cheerio.load(body);
         $('script').remove(); // Remove all script tags
-        res.send($.html());
+        res.send($.html());;
     });
 });
 
